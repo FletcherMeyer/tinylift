@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-24 12 1048 518" width="1048" height="518">
+<style>text{font-family:'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif}</style>
+<rect x="-24" y="12" width="1048" height="518" rx="14" fill="#ffffff"/>
+
+      <defs>
+        <marker id="a-sig" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" style="fill:#1d64c8"/></marker>
+        <marker id="a-lamp" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" style="fill:#d97a06"/></marker>
+        <marker id="a-data" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" style="fill:#7a4fd0"/></marker>
+        <style>
+          .blk{fill:#ffffff;stroke:#15191e;stroke-width:1.6}
+          .h{fill:#15191e;font:700 17px 'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif}
+          .s{fill:#5b6571;font-size:13px}
+          .c{fill:#0d8a5c;font:500 14px Consolas,'SFMono-Regular',Menlo,monospace}
+          .w{fill:none;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round}
+          .sym{fill:none;stroke:#15191e;stroke-width:2.2;stroke-linecap:round}
+          .gnd{fill:none;stroke:#7d8794;stroke-width:2.2;stroke-linecap:round}
+          .dot{fill:#15191e}
+        </style>
+      </defs>
+
+      <!-- ===== Floor button ===== -->
+      <rect class="blk" x="30" y="50" width="220" height="330" rx="18"/>
+      <text class="h" x="140" y="84" text-anchor="middle">Floor button</text>
+      <!-- push switch -->
+      <path class="sym" d="M126 146 H154 M140 146 V168 M92 168 H188"/>
+      <circle class="dot" cx="100" cy="190" r="4.5"/><circle class="dot" cx="180" cy="190" r="4.5"/>
+      <path class="gnd" d="M100 190 V214 M88 214 H112 M93 220 H107 M98 226 H102"/>
+      <text class="s" x="140" y="248" text-anchor="middle">Switch</text>
+      <!-- LED ring -->
+      <circle cx="140" cy="300" r="32" style="fill:none;stroke:#d97a06;stroke-width:7"/>
+      <circle cx="140" cy="300" r="20" style="fill:#ffffff;stroke:#d3d9e0;stroke-width:1.5"/>
+      <text class="s" x="140" y="358" text-anchor="middle">LED ring</text>
+
+      <!-- 12 V into the LED ring -->
+      <path class="w" style="stroke:#c8322b" d="M108 300 H70 V420"/>
+      <rect x="34" y="420" width="72" height="32" rx="16" style="fill:#ffffff;stroke:#c8322b;stroke-width:2"/>
+      <text x="70" y="441" text-anchor="middle" style="fill:#c8322b;font:700 14px Consolas,'SFMono-Regular',Menlo,monospace">12 V</text>
+
+      <!-- ===== AX11 relay ===== -->
+      <rect class="blk" x="320" y="105" width="230" height="140" rx="14" style="stroke:#0d8a5c;stroke-width:2.2"/>
+      <text class="h" x="435" y="137" text-anchor="middle" style="fill:#0d8a5c">Verkada AX11 relay</text>
+      <circle class="dot" cx="370" cy="190" r="5"/><circle class="dot" cx="500" cy="190" r="5"/>
+      <path class="sym" style="stroke:#0d8a5c;stroke-width:3" d="M500 190 L384 166"/>
+      <text class="c" x="370" y="222" text-anchor="middle">NO</text>
+      <text class="c" x="500" y="222" text-anchor="middle">COM</text>
+
+      <!-- button signal: switch -> NO, COM -> Pi -->
+      <path class="w" style="stroke:#1d64c8" d="M180 190 H370" />
+      <path class="w" style="stroke:#1d64c8" d="M500 190 H640" />
+      <line x1="262" y1="190" x2="290" y2="190" class="w" style="stroke:#1d64c8" marker-end="url(#a-sig)"/>
+      <line x1="560" y1="190" x2="588" y2="190" class="w" style="stroke:#1d64c8" marker-end="url(#a-sig)"/>
+
+      <!-- ===== Raspberry Pi ===== -->
+      <rect class="blk" x="640" y="50" width="210" height="330" rx="18"/>
+      <text class="h" x="745" y="84" text-anchor="middle">Raspberry Pi</text>
+      <g style="fill:#5b6571;opacity:.55">
+        <rect x="666" y="100" width="158" height="18" rx="3" style="fill:none;stroke:#5b6571;stroke-width:1.2"/>
+        <circle cx="676" cy="109" r="2.3"/><circle cx="684" cy="109" r="2.3"/><circle cx="692" cy="109" r="2.3"/><circle cx="700" cy="109" r="2.3"/><circle cx="708" cy="109" r="2.3"/><circle cx="716" cy="109" r="2.3"/><circle cx="724" cy="109" r="2.3"/><circle cx="732" cy="109" r="2.3"/><circle cx="740" cy="109" r="2.3"/><circle cx="748" cy="109" r="2.3"/><circle cx="756" cy="109" r="2.3"/><circle cx="764" cy="109" r="2.3"/><circle cx="772" cy="109" r="2.3"/><circle cx="780" cy="109" r="2.3"/><circle cx="788" cy="109" r="2.3"/><circle cx="796" cy="109" r="2.3"/><circle cx="804" cy="109" r="2.3"/><circle cx="812" cy="109" r="2.3"/>
+      </g>
+      <text class="s" x="745" y="250" text-anchor="middle">runs the elevator</text>
+
+      <!-- ===== Transistor (light switch for the LED ring) ===== -->
+      <circle cx="470" cy="310" r="28" style="fill:#ffffff;stroke:#15191e;stroke-width:2"/>
+      <path class="sym" d="M484 294 V326 M484 302 L458 286 M484 318 L458 334"/>
+      <path style="fill:#15191e" d="M458 334 l10 -1 l-5 -7 z"/>
+      <text class="s" x="504" y="356">Transistor</text>
+      <!-- Pi -> transistor -->
+      <path class="w" style="stroke:#d97a06" d="M640 310 H484"/>
+      <line x1="610" y1="310" x2="582" y2="310" class="w" style="stroke:#d97a06" marker-end="url(#a-lamp)"/>
+      <!-- transistor -> LED ring (lamp circuit) -->
+      <path class="w" style="stroke:#c8322b" d="M458 286 V272 H300 V300 H172"/>
+      <!-- emitter to ground -->
+      <path class="gnd" d="M458 334 V392 M446 392 H470 M451 398 H465 M456 404 H460"/>
+
+      <!-- ===== Display ===== -->
+      <path class="w" style="stroke:#7a4fd0" d="M850 215 H880"/>
+      <rect class="blk" x="880" y="160" width="100" height="112" rx="12"/>
+      <rect x="892" y="174" width="76" height="46" rx="4" style="fill:#0b0e12"/>
+      <text x="916" y="207" style="fill:#e8f1ff;font:800 26px 'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif">3</text>
+      <path d="M940 206 l8 -14 l8 14 z" style="fill:#e8f1ff"/>
+      <text class="s" x="930" y="250" text-anchor="middle">Display</text>
+    <rect x="40" y="482" width="22" height="4" rx="2" fill="#1d64c8"/><text x="70" y="489" style="fill:#5b6571;font-size:14px">Button press signal</text>
+<rect x="248.4" y="482" width="22" height="4" rx="2" fill="#d97a06"/><text x="278.4" y="489" style="fill:#5b6571;font-size:14px">Light command from the Pi</text>
+<rect x="502.4" y="482" width="22" height="4" rx="2" fill="#c8322b"/><text x="532.4" y="489" style="fill:#5b6571;font-size:14px">12 V light circuit</text>
+<rect x="703.1999999999999" y="482" width="22" height="4" rx="2" fill="#7a4fd0"/><text x="733.1999999999999" y="489" style="fill:#5b6571;font-size:14px">Display data</text></svg>

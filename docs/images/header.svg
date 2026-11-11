@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-24 -24 1280 498" width="1280" height="498">
+<style>text{font-family:'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif}</style>
+<rect x="-24" y="-24" width="1280" height="498" rx="14" fill="#ffffff"/>
+
+<defs><style>
+.hd-job{font-size:12.5px;font-weight:700;fill:#1d1f23}
+.hd-name{font-size:11px;fill:#5d636d}
+.hd-free{font-size:12px;fill:#5d636d}
+.hd-num{font-size:12px;font-weight:700;text-anchor:middle}
+.hd-note{font-size:12px;fill:#5d636d}
+</style></defs>
+<rect x="130" y="170" width="972" height="100" rx="6" fill="#1b1b1f" stroke="#d9d6cf"/>
+<text class="hd-note" x="130" y="36">↑ edge of the Pi board</text>
+<text class="hd-note" x="1112" y="224">USB ports →</text>
+<text class="hd-note" x="120" y="224" text-anchor="end">← SD card end</text>
+<circle cx="160" cy="196" r="15" fill="#b91c1c" stroke="#fff" stroke-width="2"/>
+<text class="hd-num" x="160" y="200" style="fill:#fff">2</text>
+<text class="hd-job" style="fill:#b91c1c" transform="translate(157,164) rotate(-90)">DON'T USE</text>
+<text class="hd-name" transform="translate(171,164) rotate(-90)">5 V</text>
+<rect x="145" y="229" width="30" height="30" rx="3" fill="#b91c1c" stroke="#fff" stroke-width="2"/>
+<text class="hd-num" x="160" y="248" style="fill:#fff">1</text>
+<text class="hd-job" text-anchor="end" transform="translate(157,276) rotate(-90)">OLED VCC</text>
+<text class="hd-name" text-anchor="end" transform="translate(171,276) rotate(-90)">3.3 V</text>
+<circle cx="208" cy="196" r="15" fill="#b91c1c" stroke="#fff" stroke-width="2"/>
+<text class="hd-num" x="208" y="200" style="fill:#fff">4</text>
+<text class="hd-job" style="fill:#b91c1c" transform="translate(205,164) rotate(-90)">DON'T USE</text>
+<text class="hd-name" transform="translate(219,164) rotate(-90)">5 V</text>
+<circle cx="208" cy="244" r="15" fill="#7c3aed" stroke="#d9d6cf"/>
+<text class="hd-num" x="208" y="248" style="fill:#fff">3</text>
+<text class="hd-job" text-anchor="end" transform="translate(205,276) rotate(-90)">OLED SDA</text>
+<text class="hd-name" text-anchor="end" transform="translate(219,276) rotate(-90)">GPIO2</text>
+<circle cx="256" cy="196" r="15" fill="#3f3f46" stroke="#d9d6cf"/>
+<text class="hd-num" x="256" y="200" style="fill:#ffffff">6</text>
+<text class="hd-job" transform="translate(253,164) rotate(-90)">OLED GND</text>
+<text class="hd-name" transform="translate(267,164) rotate(-90)">GND</text>
+<circle cx="256" cy="244" r="15" fill="#7c3aed" stroke="#d9d6cf"/>
+<text class="hd-num" x="256" y="248" style="fill:#fff">5</text>
+<text class="hd-job" text-anchor="end" transform="translate(253,276) rotate(-90)">OLED SCL</text>
+<text class="hd-name" text-anchor="end" transform="translate(267,276) rotate(-90)">GPIO3</text>
+<circle cx="304" cy="196" r="15" fill="#f1efe9" stroke="#d9d6cf"/>
+<text class="hd-num" x="304" y="200" style="fill:#5d636d">8</text>
+<text class="hd-free" transform="translate(301,164) rotate(-90)">leave free</text>
+<text class="hd-name" transform="translate(315,164) rotate(-90)">GPIO14 TX</text>
+<circle cx="304" cy="244" r="15" fill="#f1efe9" stroke="#d9d6cf"/>
+<text class="hd-num" x="304" y="248" style="fill:#5d636d">7</text>
+<text class="hd-free" text-anchor="end" transform="translate(301,276) rotate(-90)">spare</text>
+<text class="hd-name" text-anchor="end" transform="translate(315,276) rotate(-90)">GPIO4</text>
+<circle cx="352" cy="196" r="15" fill="#f1efe9" stroke="#d9d6cf"/>
+<text class="hd-num" x="352" y="200" style="fill:#5d636d">10</text>
+<text class="hd-free" transform="translate(349,164) rotate(-90)">leave free</text>
+<text class="hd-name" transform="translate(363,164) rotate(-90)">GPIO15 RX</text>
+<circle cx="352" cy="244" r="15" fill="#3f3f46" stroke="#d9d6cf"/>
+<text class="hd-num" x="352" y="248" style="fill:#ffffff">9</text>
+<text class="hd-job" text-anchor="end" transform="translate(349,276) rotate(-90)">→ GND rail</text>
+<text class="hd-name" text-anchor="end" transform="translate(363,276) rotate(-90)">GND</text>
+<circle cx="400" cy="196" r="15" fill="#c2410c" stroke="#d9d6cf"/>
+<text class="hd-num" x="400" y="200" style="fill:#fff">12</text>
+<text class="hd-job" transform="translate(397,164) rotate(-90)">Floor 1 LED</text>
+<text class="hd-name" transform="translate(411,164) rotate(-90)">GPIO18</text>
+<circle cx="400" cy="244" r="15" fill="#1f6fd1" stroke="#d9d6cf"/>
+<text class="hd-num" x="400" y="248" style="fill:#fff">11</text>
+<text class="hd-job" text-anchor="end" transform="translate(397,276) rotate(-90)">Floor 1 button</text>
+<text class="hd-name" text-anchor="end" transform="translate(411,276) rotate(-90)">GPIO17</text>
+<circle cx="448" cy="196" r="15" fill="#f1efe9" stroke="#d9d6cf"/>
+<text class="hd-num" x="448" y="200" style="fill:#5d636d">14</text>
+<text class="hd-free" transform="translate(445,164) rotate(-90)">spare</text>
+<text class="hd-name" transform="translate(459,164) rotate(-90)">GND</text>
+<circle cx="448" cy="244" r="15" fill="#1f6fd1" stroke="#d9d6cf"/>
+<text class="hd-num" x="448" y="248" style="fill:#fff">13</text>
+<text class="hd-job" text-anchor="end" transform="translate(445,276) rotate(-90)">Floor 2 button</text>
+<text class="hd-name" text-anchor="end" transform="translate(459,276) rotate(-90)">GPIO27</text>
+<circle cx="496" cy="196" r="15" fill="#f1efe9" stroke="#d9d6cf"/>
+<text class="hd-num" x="496" y="200" style="fill:#5d636d">16</text>
+<text class="hd-free" transform="translate(493,164) rotate(-90)">spare</text>
+<text class="hd-name" transform="translate(507,164) rotate(-90)">GPIO23</text>
+<circle cx="496" cy="244" r="15" fill="#f1efe9" stroke="#d9d6cf"/>
+<text class="hd-num" x="496" y="248" style="fill:#5d636d">15</text>
+<text class="hd-free" text-anchor="end" transform="translate(493,276) rotate(-90)">spare</text>
+<text class="hd-name" text-anchor="end" transform="translate(507,276) rotate(-90)">GPIO22</text>
+<circle cx="544" cy="196" r="15" fill="#f1efe9" stroke="#d9d6cf"/>
+<text class="hd-num" x="544" y="200" style="fill:#5d636d">18</text>
+<text class="hd-free" transform="translate(541,164) rotate(-90)">spare</text>
+<text class="hd-name" transform="translate(555,164) rotate(-90)">GPIO24</text>
+<circle cx="544" cy="244" r="15" fill="#f1efe9" stroke="#d9d6cf"/>
+<text class="hd-num" x="544" y="248" style="fill:#5d636d">17</text>
+<text class="hd-free" text-anchor="end" transform="translate(541,276) rotate(-90)">spare</text>
+<text class="hd-name" text-anchor="end" transform="translate(555,276) rotate(-90)">3.3 V</text>
+<circle cx="592" cy="196" r="15" fill="#f1efe9" stroke="#d9d6cf"/>
+<text class="hd-num" x="592" y="200" style="fill:#5d636d">20</text>
+<text class="hd-free" transform="translate(589,164) rotate(-90)">spare</text>
+<text class="hd-name" transform="translate(603,164) rotate(-90)">GND</text>
+<circle cx="592" cy="244" r="15" fill="#f1efe9" stroke="#d9d6cf"/>
+<text class="hd-num" x="592" y="248" style="fill:#5d636d">19</text>
+<text class="hd-free" text-anchor="end" transform="translate(589,276) rotate(-90)">spare</text>
+<text class="hd-name" text-anchor="end" transform="translate(603,276) rotate(-90)">GPIO10</text>
+<circle cx="640" cy="196" r="15" fill="#c2410c" stroke="#d9d6cf"/>
+<text class="hd-num" x="640" y="200" style="fill:#fff">22</text>
+<text class="hd-job" transform="translate(637,164) rotate(-90)">Floor 4 LED</text>
+<text class="hd-name" transform="translate(651,164) rotate(-90)">GPIO25</text>
+<circle cx="640" cy="244" r="15" fill="#1f6fd1" stroke="#d9d6cf"/>
+<text class="hd-num" x="640" y="248" style="fill:#fff">21</text>
+<text class="hd-job" text-anchor="end" transform="translate(637,276) rotate(-90)">Floor 3 button</text>
+<text class="hd-name" text-anchor="end" transform="translate(651,276) rotate(-90)">GPIO9</text>
+<circle cx="688" cy="196" r="15" fill="#c2410c" stroke="#d9d6cf"/>
+<text class="hd-num" x="688" y="200" style="fill:#fff">24</text>
+<text class="hd-job" transform="translate(685,164) rotate(-90)">Floor 2 LED</text>
+<text class="hd-name" transform="translate(699,164) rotate(-90)">GPIO8</text>
+<circle cx="688" cy="244" r="15" fill="#c2410c" stroke="#d9d6cf"/>
+<text class="hd-num" x="688" y="248" style="fill:#fff">23</text>
+<text class="hd-job" text-anchor="end" transform="translate(685,276) rotate(-90)">Floor 3 LED</text>
+<text class="hd-name" text-anchor="end" transform="translate(699,276) rotate(-90)">GPIO11</text>
+<circle cx="736" cy="196" r="15" fill="#f1efe9" stroke="#d9d6cf"/>
+<text class="hd-num" x="736" y="200" style="fill:#5d636d">26</text>
+<text class="hd-free" transform="translate(733,164) rotate(-90)">spare</text>
+<text class="hd-name" transform="translate(747,164) rotate(-90)">GPIO7</text>
+<circle cx="736" cy="244" r="15" fill="#f1efe9" stroke="#d9d6cf"/>
+<text class="hd-num" x="736" y="248" style="fill:#5d636d">25</text>
+<text class="hd-free" text-anchor="end" transform="translate(733,276) rotate(-90)">spare</text>
+<text class="hd-name" text-anchor="end" transform="translate(747,276) rotate(-90)">GND</text>
+<circle cx="784" cy="196" r="15" fill="#f1efe9" stroke="#d9d6cf"/>
+<text class="hd-num" x="784" y="200" style="fill:#5d636d">28</text>
+<text class="hd-free" transform="translate(781,164) rotate(-90)">never use</text>
+<text class="hd-name" transform="translate(795,164) rotate(-90)">ID_SC</text>
+<circle cx="784" cy="244" r="15" fill="#f1efe9" stroke="#d9d6cf"/>
+<text class="hd-num" x="784" y="248" style="fill:#5d636d">27</text>
+<text class="hd-free" text-anchor="end" transform="translate(781,276) rotate(-90)">never use</text>
+<text class="hd-name" text-anchor="end" transform="translate(795,276) rotate(-90)">ID_SD</text>
+<circle cx="832" cy="196" r="15" fill="#f1efe9" stroke="#d9d6cf"/>
+<text class="hd-num" x="832" y="200" style="fill:#5d636d">30</text>
+<text class="hd-free" transform="translate(829,164) rotate(-90)">spare</text>
+<text class="hd-name" transform="translate(843,164) rotate(-90)">GND</text>
+<circle cx="832" cy="244" r="15" fill="#1f6fd1" stroke="#d9d6cf"/>
+<text class="hd-num" x="832" y="248" style="fill:#fff">29</text>
+<text class="hd-job" text-anchor="end" transform="translate(829,276) rotate(-90)">Floor 4 button</text>
+<text class="hd-name" text-anchor="end" transform="translate(843,276) rotate(-90)">GPIO5</text>
+<circle cx="880" cy="196" r="15" fill="#c2410c" stroke="#d9d6cf"/>
+<text class="hd-num" x="880" y="200" style="fill:#fff">32</text>
+<text class="hd-job" transform="translate(877,164) rotate(-90)">Floor 5 LED</text>
+<text class="hd-name" transform="translate(891,164) rotate(-90)">GPIO12</text>
+<circle cx="880" cy="244" r="15" fill="#1f6fd1" stroke="#d9d6cf"/>
+<text class="hd-num" x="880" y="248" style="fill:#fff">31</text>
+<text class="hd-job" text-anchor="end" transform="translate(877,276) rotate(-90)">Floor 5 button</text>
+<text class="hd-name" text-anchor="end" transform="translate(891,276) rotate(-90)">GPIO6</text>
+<circle cx="928" cy="196" r="15" fill="#f1efe9" stroke="#d9d6cf"/>
+<text class="hd-num" x="928" y="200" style="fill:#5d636d">34</text>
+<text class="hd-free" transform="translate(925,164) rotate(-90)">spare</text>
+<text class="hd-name" transform="translate(939,164) rotate(-90)">GND</text>
+<circle cx="928" cy="244" r="15" fill="#1f6fd1" stroke="#d9d6cf"/>
+<text class="hd-num" x="928" y="248" style="fill:#fff">33</text>
+<text class="hd-job" text-anchor="end" transform="translate(925,276) rotate(-90)">Floor 6 button</text>
+<text class="hd-name" text-anchor="end" transform="translate(939,276) rotate(-90)">GPIO13</text>
+<circle cx="976" cy="196" r="15" fill="#c2410c" stroke="#d9d6cf"/>
+<text class="hd-num" x="976" y="200" style="fill:#fff">36</text>
+<text class="hd-job" transform="translate(973,164) rotate(-90)">Floor 6 LED</text>
+<text class="hd-name" transform="translate(987,164) rotate(-90)">GPIO16</text>
+<circle cx="976" cy="244" r="15" fill="#1f6fd1" stroke="#d9d6cf"/>
+<text class="hd-num" x="976" y="248" style="fill:#fff">35</text>
+<text class="hd-job" text-anchor="end" transform="translate(973,276) rotate(-90)">Call UP button</text>
+<text class="hd-name" text-anchor="end" transform="translate(987,276) rotate(-90)">GPIO19</text>
+<circle cx="1024" cy="196" r="15" fill="#c2410c" stroke="#d9d6cf"/>
+<text class="hd-num" x="1024" y="200" style="fill:#fff">38</text>
+<text class="hd-job" transform="translate(1021,164) rotate(-90)">Call UP LED</text>
+<text class="hd-name" transform="translate(1035,164) rotate(-90)">GPIO20</text>
+<circle cx="1024" cy="244" r="15" fill="#1f6fd1" stroke="#d9d6cf"/>
+<text class="hd-num" x="1024" y="248" style="fill:#fff">37</text>
+<text class="hd-job" text-anchor="end" transform="translate(1021,276) rotate(-90)">Call DOWN button</text>
+<text class="hd-name" text-anchor="end" transform="translate(1035,276) rotate(-90)">GPIO26</text>
+<circle cx="1072" cy="196" r="15" fill="#c2410c" stroke="#d9d6cf"/>
+<text class="hd-num" x="1072" y="200" style="fill:#fff">40</text>
+<text class="hd-job" transform="translate(1069,164) rotate(-90)">Call DOWN LED</text>
+<text class="hd-name" transform="translate(1083,164) rotate(-90)">GPIO21</text>
+<circle cx="1072" cy="244" r="15" fill="#f1efe9" stroke="#d9d6cf"/>
+<text class="hd-num" x="1072" y="248" style="fill:#5d636d">39</text>
+<text class="hd-free" text-anchor="end" transform="translate(1069,276) rotate(-90)">spare</text>
+<text class="hd-name" text-anchor="end" transform="translate(1083,276) rotate(-90)">GND</text>
+</svg>

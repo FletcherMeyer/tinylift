@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-24 -24 808 388" width="808" height="388">
+<style>text{font-family:'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif}</style>
+<rect x="-24" y="-24" width="808" height="388" rx="14" fill="#ffffff"/>
+
+  <defs>
+    <style>
+      .box{fill:#ffffff;stroke:#1d1f23;stroke-width:1.5}
+      .dash{fill:none;stroke:#5d636d;stroke-width:1.2;stroke-dasharray:6 4}
+      .t{fill:#1d1f23;font-size:13px}
+      .ts{fill:#5d636d;font-size:11.5px}
+      .tn{fill:#c2410c;font-size:11.5px;font-weight:700}
+      .tb{fill:#1d1f23;font-size:14px;font-weight:700}
+      .w-in{stroke:#1f6fd1;stroke-width:3;fill:none}
+      .w-out{stroke:#c2410c;stroke-width:3;fill:none}
+      .w-gnd{stroke:#3f3f46;stroke-width:3;fill:none}
+      .w-pwr{stroke:#b91c1c;stroke-width:3;fill:none}
+      .w-led{stroke:#1d1f23;stroke-width:3;fill:none}
+      .dot{fill:#1d1f23}
+      .comp{stroke:#1d1f23;stroke-width:2;fill:none}
+      .comp-new{stroke:#c2410c;stroke-width:2.5;fill:none}
+      .case{stroke:#5d636d;stroke-width:5.5;fill:none}
+      .hw{stroke-width:3;fill:none}
+    </style>
+  </defs>
+  <!-- Raspberry Pi -->
+  <rect class="box" x="20" y="40" width="150" height="280" rx="8"/>
+  <text class="tb" x="34" y="64">Raspberry Pi</text>
+  <text class="t" x="34" y="84">Floor N button pin</text>
+  <text class="ts" x="34" y="99">input, pull-up</text>
+  <text class="t" x="34" y="226">Floor N LED pin</text>
+  <text class="ts" x="34" y="241">output</text>
+  <text class="t" x="34" y="300">GND (pin 9)</text>
+  <circle class="dot" cx="170" cy="90" r="4"/><circle class="dot" cx="170" cy="232" r="4"/><circle class="dot" cx="170" cy="296" r="4"/>
+
+  <!-- AX11 -->
+  <rect class="box" x="235" y="52" width="150" height="86" rx="8" style="stroke:#0f8a5f"/>
+  <text class="tb" x="249" y="74" style="fill:#0f8a5f">AX11 relay N</text>
+  <text class="t" x="243" y="95">COM</text>
+  <text class="t" x="347" y="95">NO</text>
+  <text class="ts" x="343" y="127">NC</text>
+  <circle class="dot" cx="235" cy="90" r="4"/><circle class="dot" cx="385" cy="90" r="4"/>
+  <circle cx="385" cy="122" r="4" fill="#a8a29e"/>
+  <path class="w-in" d="M170 90 H235"/>
+  <path class="case" d="M385 90 H560"/><path class="hw" style="stroke:#ffffff" d="M385 90 H560"/>
+  <text class="ts" x="400" y="80">fail-secure: COM + NO</text>
+
+  <!-- Button -->
+  <rect class="box" x="560" y="40" width="180" height="280" rx="8"/>
+  <text class="tb" x="600" y="64">19 mm button</text>
+  <text class="ts" x="600" y="80">(Floor N)</text>
+  <text class="t" x="572" y="95">NO · white</text>
+  <text class="t" x="572" y="137">C · yellow</text>
+  <text class="ts" x="572" y="169">NC · green (tape off)</text>
+  <text class="t" x="572" y="218">LED · black</text>
+  <text class="t" x="572" y="276">LED · red</text>
+  <circle class="dot" cx="560" cy="90" r="4"/><circle class="dot" cx="560" cy="132" r="4"/>
+  <path class="case" d="M560 164 H538"/><path class="hw" style="stroke:#1f9d55" d="M560 164 H538"/><rect x="528" y="159" width="11" height="10" rx="2" fill="#5d636d"/><circle cx="560" cy="164" r="4" fill="#a8a29e"/>
+  <circle class="dot" cx="560" cy="213" r="4"/><circle class="dot" cx="560" cy="271" r="4"/>
+  <!-- C to ground rail -->
+  <path class="case" d="M560 132 H520 V148"/><path class="hw" style="stroke:#f2c200" d="M560 132 H520 V148"/>
+  <path class="comp" d="M508 148 H532 M512 154 H528 M517 160 H523"/>
+  <text class="ts" x="500" y="152" text-anchor="end">GND rail</text>
+
+  <!-- Breadboard (already soldered) -->
+  <rect class="dash" x="255" y="180" width="275" height="152" rx="8"/>
+  <text class="ts" x="265" y="326">soldered breadboard</text>
+
+  <!-- Pi LED pin -> NEW 1k -> base -->
+  <path class="w-out" d="M170 232 H184"/>
+  <path class="comp-new" d="M184 232 l4 -7 l8 14 l8 -14 l8 14 l8 -14 l8 14 l4 -7"/>
+  <text class="tn" x="183" y="216">add 1 kΩ</text>
+  <path class="w-out" d="M240 232 H380"/>
+  <text class="ts" x="268" y="224">to middle leg</text>
+
+  <!-- NPN (E-B-C) -->
+  <circle class="comp" cx="392" cy="232" r="22"/>
+  <path class="comp" d="M380 218 V246 M380 226 L404 210 M380 238 L404 254"/>
+  <path class="comp" d="M398 249 L404 254 L396 255"/>
+  <text class="ts" x="368" y="226" text-anchor="end">B</text>
+  <text class="ts" x="410" y="205">C</text>
+  <text class="ts" x="410" y="266">E</text>
+  <text class="ts" x="344" y="272">NPN</text>
+
+  <!-- collector -> on-board resistor -> LED- -->
+  <path class="w-led" d="M404 210 V213 H440"/>
+  <path class="comp" d="M440 213 l4 -7 l8 14 l8 -14 l8 14 l8 -14 l8 14 l4 -7"/>
+  <path class="case" d="M496 213 H560"/><path class="hw" style="stroke:#111111" d="M496 213 H560"/>
+  <text class="ts" x="428" y="198">on-board resistor</text>
+
+  <!-- emitter -> ground rail -->
+  <path class="w-gnd" d="M404 254 V292"/>
+  <path class="comp" d="M392 292 H416 M396 298 H412 M401 304 H407"/>
+  <text class="ts" x="422" y="300">GND rail</text>
+
+  <!-- 12V rail to LED+ -->
+  <path class="case" d="M440 271 H560"/><path class="hw" style="stroke:#d62828" d="M440 271 H560"/>
+  <text class="ts" x="442" y="264">+12 V rail</text>
+
+  <!-- Pi ground to breadboard ground rail -->
+  <path class="w-gnd" d="M170 296 H255"/>
+  <text class="ts" x="262" y="300">GND rail</text>
+</svg>

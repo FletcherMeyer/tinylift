@@ -1,0 +1,15 @@
+# Installed by: bash install.sh --autostart   (fills in __USER__ and __DIR__)
+[Unit]
+Description=TinyLift v2 demo elevator
+After=multi-user.target
+
+[Service]
+Type=simple
+User=__USER__
+WorkingDirectory=__DIR__
+ExecStart=/usr/bin/python3 -u __DIR__/tinylift.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
